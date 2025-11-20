@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<section>
+  <h2>{{ texts.run_code }}</h2>
+  <form id="codeForm">
+    <textarea name="code" rows="5" placeholder="print('Hello')"></textarea>
+    <button type="submit">{{ texts.run }}</button>
+  </form>
+</section>
+
+<section>
+  <h2>{{ texts.jobs }}</h2>
+  <ul id="jobsList">
+    {% for job_id, job in jobs.items() %}
+      <li data-job-id="{{ job_id }}">
+        Job {{ job_id }} - <span class="status">{{ job.status }}</span>
+        <button class="stopBtn">Stop</button>
+        <pre class="log"></pre>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
