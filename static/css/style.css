@@ -1,0 +1,8 @@
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f5f5f5; }
+header { background:#6200ee; color:white; padding:1em; }
+h1,h2{ margin:0.5em 0; }
+main { padding:1em; }
+textarea { width:100%; font-family: monospace; }
+button { background-color:#03dac6; border:none; padding:0.5em 1em; color:black; border-radius:8px; cursor:pointer; }
+pre { background:#eee; padding:0.5em; border-radius:5px; max-height:200px; overflow:auto; }
+li { margin-bottom:1em; }
